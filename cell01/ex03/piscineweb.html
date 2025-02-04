@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cellule1.3 - Web</title>
     <style>
+            * {
+            box-sizing: border-box;
+        }
+
+
         body {
             margin: 0;
         }
-        .imggg{
+
+        .imggg {
+            overflow: hidden;
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            gap: 16px;
             max-width: 1400px;
+            margin: 0 auto;
             padding: 20px 10px;
         }
-        img{
+
+        img {
             width: 100%;
             max-width: 550px;
             height: 500px;
