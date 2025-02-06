@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.one, .two, .three {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.one {
+    background: url('https://kiji.life/eats/wp-content/uploads/2019/07/DSC_8184.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.two {
+    background: black;
+    color: white;
+}
+
+.three {
+    background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/fa/07/17/caption.jpg?w=900&h=500&s=1') no-repeat center center/cover;
+    background-attachment: fixed;
+}
