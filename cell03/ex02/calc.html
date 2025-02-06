@@ -13,14 +13,7 @@
             background-color: #f0f0f0;
         }
 
-        .calculator {
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            background-color: white;
-        }
-
-        input[type="number"] {
+        input[type="text"] {
             margin: 5px;
             padding: 10px;
             font-size: 16px;
@@ -54,10 +47,28 @@
 
     <script>
         function calculate() {
+            const cleft = document.getElementById("left").value;
+            const cright = document.getElementById("right").value;
+
+            for (let i = 0; i < cleft.length; i++) {
+                if (cleft[i].charCodeAt(0) < 48 || cleft[i].charCodeAt(0) > 57) {
+                    alert('Error :(');
+                    console.error('Error :(');
+                    return;
+                }
+            }
+
+            for (let i = 0; i < cright.length; i++) {
+                if (cright[i].charCodeAt(0) < 48 || cright[i].charCodeAt(0) > 57) {
+                    alert('Error :(');
+                    console.error('Error :(');
+                    return;
+                }
+            }
+
             const left = parseInt(document.getElementById("left").value);
             const operator = document.getElementById("operator").value;
             const right = parseInt(document.getElementById("right").value);
-            console.log(left);
 
             if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
                 alert('Error :(');
