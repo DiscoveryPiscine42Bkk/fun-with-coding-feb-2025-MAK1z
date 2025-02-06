@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+  }
+  
+  .profile-card {
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .profile-card h2 {
+    margin-top: 0;
+    color: gray;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    border: 3px solid #5e5858;
+  }
+  
+  .login {
+    font-weight: bold;
+    color: gray;
+  }
+  
+  .description {
+    font-style: italic;
+    color: #4b4949;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+  
+  .contact-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .profile-table td {
+    padding: 5px;
+    text-align: left;
+    border: none;
+  }

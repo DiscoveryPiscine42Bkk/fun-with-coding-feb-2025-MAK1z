@@ -37,7 +37,7 @@
 <body>
 
     <div class="calculator">
-        <input type="number" id="left" placeholder="Left Operand">
+        <input type="text" id="left" placeholder="Left Operand">
         
         <select id="operator">
             <option value="00">+</option>    
@@ -47,7 +47,7 @@
             <option value="04">%</option>
         </select>
         
-        <input type="number" id="right" placeholder="Right Operand">
+        <input type="text" id="right" placeholder="Right Operand">
         
         <input type="submit" value="Try me!" onclick="calculate()" />
     </div>
@@ -57,6 +57,7 @@
             const left = parseInt(document.getElementById("left").value);
             const operator = document.getElementById("operator").value;
             const right = parseInt(document.getElementById("right").value);
+            console.log(left);
 
             if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
                 alert('Error :(');
