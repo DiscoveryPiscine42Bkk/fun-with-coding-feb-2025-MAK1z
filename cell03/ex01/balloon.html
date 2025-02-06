@@ -10,9 +10,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f5;
+            margin: 10%;
 }
 #balloon {
             width: 200px;
@@ -23,7 +21,7 @@ body {
 }
 </style>
 <body>
-    <div id="balloon"></div>
+    <div id="balloon" onclick="balloonlick()" onmouseleave="balloonleave()"></div>
     <script>
         let balloon = document.getElementById('balloon');
         let size = 200;
@@ -36,7 +34,7 @@ body {
             balloon.style.backgroundColor = colors[colorIndex];
         }
 
-        balloon.onclick = function() {
+        function balloonlick() {
             if (size+10 <= 420) {
                 size += 10;
                 colorIndex = (colorIndex + 1) % colors.length;
@@ -46,7 +44,7 @@ body {
             }
             updateBalloon();
         }
-        balloon.onmouseleave = function() {
+        function balloonleave() {
             if (size > 200) {
                 size -= 5;
                 colorIndex = (colorIndex - 1 + colors.length) % colors.length;
