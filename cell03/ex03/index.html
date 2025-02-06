@@ -1,75 +1,52 @@
-<html lang="en"></html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO</title>
-    <style>
-        body{
-            background-color: darkblue;
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: bold;
-            font-weight: bold;
-        }
-        .container {
-            width: 500px;
-            height: 500px;
-            margin: 0 auto;
-        }
-        p {
-            margin: 4px 0;
-        }
-        .container * {
-            border-radius: 5px;
-        }
-        button {
-            border: none;
-            background-color: red;
-            padding: 8px 12px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: red;
-        }
-        #new {
-            background-color: blue;
-            width: 50%;
-            height: 40px;
-            font-size: large;
-            font-weight: bold;
-        }
-        #new:hover{
-            background-color: darkblue;
-        }
-        #ft_list {
-            border: none;
-            padding: 16px 12px;
-            height: 500px;
-            margin-top: 10px;
-            background-color: lime;
-        }
-        #ft_list .todo {
-            border: none;
-            padding: 0px;
-            padding-left: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 4px;
-            background-color: darkblue;
-            color: limegreen;
-        }
-    </style>
+    <title>To Do</title>
+    <script type="text/javascript" src="todo.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 5px 0;
+        font-family: 'Lexend Deca', sans-serif;
+        background-color: aquamarine;
+        font-size: 18px;
+        text-align: center;
+    }
 
+    .container {
+        margin: auto;
+        border-radius: 15px;
+        border-color: black;
+        width: 300px;
+        background-color: black;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    div {
+        color: white;
+        display: block;
+        margin-top: 10px;
+    }
+</style>
 <body>
     <div class="container">
-        <center>    
-            <h1 style="color: aliceblue;">Todo List</h1>
-            <button id="new" onclick="newTodo()">New</button>
-        </center>
-        <div id="ft_list"></div>
+        <button type="button" onclick="addTask()">New</button>
+        <div id="to_list">    
+        </div>
     </div>
-    <script src="todo.js"></script>
 </body>
 </html>

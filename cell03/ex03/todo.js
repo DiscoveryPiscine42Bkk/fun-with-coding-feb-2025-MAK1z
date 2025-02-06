@@ -1,42 +1,55 @@
-const list = document.getElementById("ft_list")
-let TodoList = []
-
-function createTodo(text) {
-    const element = document.createElement('div')
-    element.classList.add('todo')
-    element.innerHTML = '<p>' + text + '</p>' + '<button onclick="remove(' + "'" + text + "'" + ')">Delete</button>'
-    return element;
+function setCookie(cookid, cookvalue) {
+    var d = new Date();
+    d.setMonth(d.getFullYear() + 1000);
+    document.cookie = cookid + '=' + cookvalue + '; expires=' + d.toUTCString() + '; path=/';
 }
 
-function render() {
-    list.innerHTML = ''
-    for (let index = 0; index < TodoList.length; index++) {
-        const element = TodoList[index];
-        list.innerHTML += createTodo(element).outerHTML
-    }
-    document.cookie = JSON.stringify(TodoList)
+function deleteList(cookid) {
+    document.cookie = cookid + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
 }
 
-function newTodo() {
-    let name = prompt("Name the todo.")
-    if (name.length > 0) {
-        TodoList.unshift(name)
-        render()
+function addTask() {
+    var data = prompt("input-something");
+    let id = Date.now();
+    if (data && data.trim() !== "") {
+        addList(data, id);
+        setCookie(id, data);
     }
 }
 
-function remove(text) {
-    let yes = confirm('Are you sure to remove.')
-    if (yes) {
-        TodoList = TodoList.filter((a) => a != text)
-        render()
+function addList(value, id = "None") {
+    var list = document.getElementById("to_list");
+    var div = document.createElement("div");
+    div.textContent = value;
+    div.id = id;
+
+    if (value === '' && id === 'None') {
+        alert('Plsssssssssssssss input');
+    } else {
+        list.prepend(div);
+    }
+
+    div.onclick = function(e) {
+        if (confirm(`${this.id}, Are you sure you want to delete this task?`)) {
+            deleteList(this.id);
+            div.remove();
+        }
+    };
+}
+
+function checkList() {
+    let cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i].trim();
+        if (cookie) {
+            let parts = cookie.split('=');
+            let id = parts[0].trim();
+            let value = parts[1];
+            if(value){
+                addList(value, id);
+            }
+        }
     }
 }
 
-window.onload = function () {
-    let save = document.cookie;
-    if (save.length > 0) {
-        TodoList = JSON.parse(save)
-        render()
-    }
-}
+window.onload = checkList;
