@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kmarat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-image: url("https://xmple.com/wallpaper/purple-blue-gradient-linear-3840x2160-c2-9400d3-87cefa-a-255-f-14.svg");
+            background-size: cover;
+            background-position: center;
+            color: black;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 100px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .introPage {
+            padding: 10px 0;
+        }
+
+        .introDetail {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+
+        .introImg {
+            border-radius: 15%;
+            max-width: 100%;
+            height: 700px;
+        }
+
+        .about {
+            padding: 40px 0;
+        }
+
+        .skill {
+            background-color: #eee;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .skill-level {
+            background-color: royalblue;
+            height: 100%;
+            border-radius: 5px;
+            width: 0;
+            transition: width 0.8s ease-in-out;
+        }
+
+        .skillPage {
+            padding: 20px 0;
+        }
+
+        .boss {
+            padding: 40px 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .bossCard {
+            border: 1px solid #554f4f;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            width: 275px;
+            height: 275px;
+            justify-content: center;
+        }
+
+        .bossCard:hover {
+            transform: translateY(+5px);
+        }
+
+        .bossCard img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .btn-primary {
+            background-color: #663399;
+            border-color: #663399;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://profile.intra.42.fr/assets/42_logo-7dfc9110a5319a308863b96bda33cea995046d1731cebb735e41b16255106c12.svg"
+                    alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foot">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <main>
+        <div class="introPage">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="introDetail">
+                            <h1>Hi everyone!</h1>
+                            <h2>Kridsanapakron Marat</h2>
+                            <h5>I want to use this space to tell you a little about myself, my passions and my
+                                experiences</h5>
+                            <a href="#about"><button class="btn"
+                                    style="background-color: #663399; color: white;">Let'see it</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 justify-content-center">
+                        <img src="https://scontent.fbkk8-4.fna.fbcdn.net/v/t1.15752-9/473324345_2108467819582940_2466315394437809202_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=D0KUf4sV3fsQ7kNvgHrrPom&_nc_oc=AdhozwrP7mJnTgRk8R2fUaeuVQAhhI7IokZFExGROae6Wcu07PXvYL7QZ0XWDbi0tPoexVgE5kd5WzvPzE16Hx1g&_nc_zt=23&_nc_ht=scontent.fbkk8-4.fna&oh=03_Q7cD1gEFAr2VzPUvJ7fsD6dV2U4Nbf17z0n85eFI7AB0uMMpqQ&oe=67CD5CBA"
+                            class="introImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hey everyone! I'm Kridsanapakron Marat, but you can call me Did. I'm a student at King Mongkut's
+                    Institute of Technology Ladkrabang, studying in
+                    the School of Information Technology. But when I'm not coding or reading the books, you'll find me
+                    deep in the world of
+                    Ragnarok Online! Seriously, I'm obsessed with farming monsters and tackling dungeons. Inside those
+                    dungeons, a whole horde of monsters are just waiting to be challenged! Come and join the fun! Get
+                    ready for an adventure!
+                </p>
+                <p>
+                    And you can check my status below!!!
+                </p>
+            </div>
+        </div>
+        <div class="skillPage">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>HP</p>
+                        <div class="skill">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>ATK</p>
+                        <div class="skill">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>DEF</p>
+                        <div class="skill">
+                            <div class="skill-level" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>CRI</p>
+                        <div class="skill">
+                            <div class="skill-level" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>AGI</p>
+                        <div class="skill">
+                            <div class="skill-level" style="width: 99%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>DEX</p>
+                        <div class="skill">
+                            <div class="skill-level" style="width: 22%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boss">
+            <div class="container">
+                <h2>Boss I've taken down</h2>
+                <div id="bossCarousel" class="carousel slide">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="bossCard">
+                                            <h4>Dark Lord</h4>
+                                            <a
+                                                href="https://ratemyserver.net/index.php?mob_name=dark+lord&page=mob_db&quick=1&f=1&mob_search=Search"><img
+                                                    src="./pic/dl.gif"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="bossCard">
+                                            <h4>Eddga</h4>
+                                            <a
+                                                href="https://ratemyserver.net/index.php?mob_name=Eddga&page=mob_db&quick=1&f=1&mob_search=Search"><img
+                                                    src="./pic/edd.gif"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="bossCard">
+                                            <h4>Doppelganger</h4>
+                                            <a
+                                                href="https://ratemyserver.net/index.php?mob_name=Doppelganger&page=mob_db&quick=1&f=1&mob_search=Search"><img
+                                                    src="./pic/dopp.gif"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="bossCard">
+                                            <h4>Maya</h4>
+                                            <a
+                                                href="https://ratemyserver.net/index.php?mob_name=Maya&page=mob_db&quick=1&f=1&mob_search=Search"><img
+                                                    src="./pic/maya.gif"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="bossCard">
+                                            <h4>Phreeoni</h4>
+                                            <a
+                                                href="https://ratemyserver.net/index.php?mob_name=Phreeoni&page=mob_db&quick=1&f=1&mob_search=Search"><img
+                                                    src="./pic/phree.gif"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="bossCard">
+                                            <h4>Moonlight Flower</h4>
+                                            <a
+                                                href="https://ratemyserver.net/index.php?mob_name=Moonlight+Flower&page=mob_db&quick=1&f=1&mob_search=Search"><img
+                                                    src="./pic/moon.gif"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#bossCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#bossCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-4" id="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://profile.intra.42.fr/assets/42_logo-7dfc9110a5319a308863b96bda33cea995046d1731cebb735e41b16255106c12.svg"
+                        alt="Logo" height="50" class="mb-2">
+                    <p>172.17.1.69 Ltd.</p>
+                    <p>King Mongkut's Institute of Technology Ladkrabang</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>NAMMON CONTACT</h5>
+                    <a href="mailto:66070055@kmitl.ac.th?subject=Hello&body=How%20are%20you?" class="me-2"><img
+                            src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+                            alt="mail"><i class="fab fa-mail"></i></a>
+                    <a href="https://github.com/MAK1z"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WxsHiJ67Myud_p_XIdNI35NDec7psLLa5Q&s"
+                            alt="github"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>DID CONTACT</h5>
+                    <a href="#" class="me-2"><img
+                            src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+                            alt="mail"><i class="fab fa-mail"></i></a>
+                    <a href="#"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WxsHiJ67Myud_p_XIdNI35NDec7psLLa5Q&s"
+                            alt="github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
